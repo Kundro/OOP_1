@@ -1,0 +1,2 @@
+D:\Visual\Projects\OOP_1\Debug\OOP_1.exe
+D:\Visual\Projects\OOP_1\Debug\OOP_1.pdb
