@@ -18,6 +18,7 @@ public:
 	void show_tittle() { cout <<"Name: "<< tittle << endl; }
 };
 
+
 int main()
 {
 	setlocale(LC_ALL, "ru");
@@ -44,4 +45,4 @@ int main()
 	B_ob.show_author(); D_ob.show_tittle();
 
 	return 0;
-}
+} 

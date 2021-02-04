@@ -8,7 +8,7 @@ class figure
 protected:
 	double x, y;
 public:
-	void set_dim(double i, double j) {
+	void set_dim(double i, double j=0) {
 		x = i; y = j;
 	}
 
@@ -33,13 +33,21 @@ public:
 	}
 };
 
+class circle : public figure {
+public:
+	void show_area() {
+		cout << "The circle with radius: " << x << ". Area: " << 3.14 * x * x << endl;
+	}
+};
+
 int main() 
 {
 	figure* p;
 
 	triangle t;
 	rectangle r;
-	
+	circle c;
+
 	p = &t;
 	p->set_dim(10.0, 5.0);
 	p->show_area();
@@ -48,6 +56,9 @@ int main()
 	p->set_dim(4.0, 2.0);
 	p->show_area();
 
+	p = &c;
+	p->set_dim(9.0);
+	p->show_area();
 
 	return 0;
 }
