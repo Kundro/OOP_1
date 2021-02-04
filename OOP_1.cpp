@@ -1,4 +1,4 @@
-// polymorphism
+// Polymorphism //
 
 using namespace std;
 
